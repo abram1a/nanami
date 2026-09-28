@@ -7,7 +7,7 @@
 让学习从“看过”变成“能回忆、能解释、能应用”。
 
 <p>
-  <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/version-v3.1.0-7c3aed?style=flat-square" alt="version"></a>
+  <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/version-v3.2.0-7c3aed?style=flat-square" alt="version"></a>
   <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/status-active-16a34a?style=flat-square" alt="status"></a>
   <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/github/stars/abram1a/nanami?style=flat-square" alt="stars"></a>
   <img src="https://img.shields.io/badge/method-retrieval%20practice-f59e0b?style=flat-square" alt="method">
@@ -68,6 +68,7 @@ Miku，让我们开始学习数据结构吧。
 - 测试目的透明：开始诊断、提取或复习前，说明它要判断什么、为什么有用、需要多久，以及是否会记录。
 - 学习选择权：让你选择现在开始、先听讲解、只更新计划或稍后再学；拒绝测试不会被记录为失败。
 - 方法匹配：根据目标选择提取、间隔、刻意练习、示例练习、迁移练习、项目学习或习惯支持，不一次堆给你所有方法。
+- 学习依据可见：显示当前使用的方法、依据书籍、选择理由和要观察的证据，不展示冗长的内部思维过程。
 
 ### 2. 温柔但诚实的人格
 
@@ -127,6 +128,18 @@ flowchart LR
 
 在任何诊断题、提取练习、练习题、信心检查或复习检查前，Miku 会先说明：这次活动要判断什么、为什么有用、大约需要多久，以及是否计入学习记录。你可以选择现在进行、先听讲解、只更新计划或稍后再学。Miku 会等待你的选择后才开始出题。
 
+每次开始或切换学习方法时，Miku 还会显示简短的学习依据：
+
+```text
+学习依据：
+方法：主动提取 + 信心校准
+依据书籍：《认知天性》（Make It Stick）
+为什么现在用：先判断你能否从记忆中说出关键关系，再决定需要补哪一小段解释。
+这次观察：回忆是否准确，以及信心和实际表现是否一致。
+```
+
+这里显示的是可核对的教学依据和选择理由，不是冗长的内部思维过程。活动结束后，Miku 会根据实际表现说明是否继续、降低或提高难度，或安排复习。
+
 ## 学习文件夹
 
 确认学习主题后，Miku 会在当前工作目录创建或复用：
@@ -179,7 +192,13 @@ Miku：我想先用 3 个小问题判断你是概念混淆，还是应用时容�
 
 你：现在做。
 
-Miku：先不看资料。请你用自己的话说明：
+Miku：
+       学习依据：主动提取 + 信心校准
+       依据书籍：《认知天性》（Make It Stick）
+       为什么现在用：先确认你能否从记忆中区分三种遍历，再决定要补充概念还是练习应用。
+       这次观察：回忆是否准确，以及信心和实际表现是否一致。
+
+       先不看资料。请你用自己的话说明：
        前序遍历、中序遍历、后序遍历分别是在什么时候访问根节点？
        每个答案后写一个 0%–100% 的信心值。
 
@@ -203,7 +222,7 @@ miku/
 
 ## 版本
 
-当前版本：**v3.1.0**
+当前版本：**v3.2.0**
 
 | 版本 | 内容 |
 | --- | --- |
@@ -212,6 +231,7 @@ miku/
 | `v2.0.0` | 更名为 Nanami，加入温柔、具体鼓励和促进自主学习的人物设定 |
 | `v3.0.0` | Skill 名称改为 Miku，统一调用名和界面显示 |
 | `v3.1.0` | 增加安静克制的语气、测试目的说明、学习选择权和多种学习方法书籍 |
+| `v3.2.0` | 显示每次学习活动的方法、依据书籍、选择理由和观察证据 |
 
 ## 本地安装
 
