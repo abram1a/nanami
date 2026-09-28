@@ -7,7 +7,7 @@
 让学习从“看过”变成“能回忆、能解释、能应用”。
 
 <p>
-  <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/version-v3.4.0-7c3aed?style=flat-square" alt="version"></a>
+  <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/version-v3.5.0-7c3aed?style=flat-square" alt="version"></a>
   <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/status-active-16a34a?style=flat-square" alt="status"></a>
   <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/github/stars/abram1a/nanami?style=flat-square" alt="stars"></a>
   <img src="https://img.shields.io/badge/method-retrieval%20practice-f59e0b?style=flat-square" alt="method">
@@ -158,14 +158,26 @@ flowchart LR
 
 这里显示的是可核对的教学依据和选择理由，不是冗长的内部思维过程。活动结束后，Miku 会根据实际表现说明是否继续、降低或提高难度，或安排复习。
 
+### 计划制定
+
+选择“计划制定”后，Miku 会先问有没有更大的目标：有就描述并保存到 `personalinformation.md`，没有就从当前的小学习目标开始。接着检查已有的 `学习计划.md`；没有计划时，根据最终成果、能力、里程碑、每周行动、能力证据和复习规则制定计划。确认的上课或学习时间保存到 `timetable.md`。
+
+### 学习课程
+
+选择“学习”后，Miku 会先收集课程资料和辅助学习材料，创建或复用课程管理文件夹；然后进行简短预习，说明需要提前了解的前置知识，再进入学习。没有课程计划时，会询问是否先由 Miku 制定。
+
 ## 学习文件夹
 
 确认学习主题后，Miku 会在当前工作目录创建或复用：
 
 ```text
 学习资料/<主题>/
+├── personalinformation.md  # 按需：大目标和已确认的相关信息
+├── timetable.md             # 按需：上课与学习时间
 ├── 学习计划.md
 ├── 学习打卡.md
+├── 课程资料/               # 按需
+├── 预习/                   # 按需
 ├── 笔记/
 ├── 练习/
 ├── 复习记录/
@@ -178,10 +190,11 @@ Miku 会先检查 `学习计划.md`：
 
 - 已有实质内容：直接读取和沿用，不再重复询问；
 - 文件不存在、为空或只有占位符：询问你是否已有计划；
-- 选择“让 Miku 制定学习计划”后：先确认最终职业、项目、考试或其他具体成果；
+- 选择“计划制定”后：先确认有没有更大的职业、项目、考试或其他具体成果；
 - 跟课程学习时：确认当前讲到哪一节后，先询问是否已有这门课对应的学习计划；
 - 你提供计划：保存并保留原文；
-- 你需要帮助：根据最终成果、所需能力、时间和基础制定计划。
+- 你需要帮助：根据最终成果、所需能力、时间和基础制定计划；
+- 确认上课或学习时间：保存到 `timetable.md`，并检查时间冲突。
 
 ### 学习打卡
 
@@ -241,7 +254,7 @@ miku/
 
 ## 版本
 
-当前版本：**v3.4.0**
+当前版本：**v3.5.0**
 
 | 版本 | 内容 |
 | --- | --- |
@@ -253,6 +266,7 @@ miku/
 | `v3.2.0` | 显示每次学习活动的方法、依据书籍、选择理由和观察证据 |
 | `v3.3.0` | 增加最终职业或成果目标，以及用于制定学习计划的书籍知识库 |
 | `v3.4.0` | 增加“课程学习”与“让 Miku 制定学习计划”的首步选择 |
+| `v3.5.0` | 按“计划制定 / 学习”分支完善课程管理、预习、个人信息和时间表流程 |
 
 ## 本地安装
 
