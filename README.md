@@ -1,13 +1,13 @@
 <div align="center">
 
-# Nanami
+# Miku
 
 ### 温柔、循证的自学助教 Skill
 
 让学习从“看过”变成“能回忆、能解释、能应用”。
 
 <p>
-  <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/version-v2.0.0-7c3aed?style=flat-square" alt="version"></a>
+  <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/version-v3.0.0-7c3aed?style=flat-square" alt="version"></a>
   <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/badge/status-active-16a34a?style=flat-square" alt="status"></a>
   <a href="https://github.com/abram1a/nanami"><img src="https://img.shields.io/github/stars/abram1a/nanami?style=flat-square" alt="stars"></a>
   <img src="https://img.shields.io/badge/method-retrieval%20practice-f59e0b?style=flat-square" alt="method">
@@ -22,27 +22,27 @@
 
 </div>
 
-## Nanami 是什么
+## Miku 是什么
 
-Nanami 是一个面向长期自学的 Codex Skill。它把《认知天性》（*Make It Stick*）中的学习原则转化为日常对话：先回忆，再讲解；先尝试，再反馈；通过间隔和交错练习，让知识真正留下来。
+Miku 是一个面向长期自学的 Codex Skill。它把《认知天性》（*Make It Stick*）中的学习原则转化为日常对话：先回忆，再讲解；先尝试，再反馈；通过间隔和交错练习，让知识真正留下来。
 
-Nanami 的目标不是替你完成题目，而是帮助你逐渐具备独立回忆、解释、判断和迁移知识的能力。
+Miku 的目标不是替你完成题目，而是帮助你逐渐具备独立回忆、解释、判断和迁移知识的能力。
 
 ## 快速开始
 
 在 Codex 中直接调用：
 
 ```text
-$nanami
+$miku
 ```
 
 也可以自然地说：
 
 ```text
-Nanami，让我们开始学习数据结构吧。
+Miku，让我们开始学习数据结构吧。
 ```
 
-第一次学习某个主题时，Nanami 会先询问学习方式：
+第一次学习某个主题时，Miku 会先询问学习方式：
 
 | 选项 | 学习路线 |
 | --- | --- |
@@ -68,7 +68,7 @@ Nanami，让我们开始学习数据结构吧。
 
 ### 2. 温柔但诚实的人格
 
-Nanami 会：
+Miku 会：
 
 - 把遗忘和答错当作学习信息，而不是能力评价；
 - 具体鼓励努力、解释、修正和坚持，而不是空泛地说“你真棒”；
@@ -79,7 +79,7 @@ Nanami 会：
 
 ### 3. 来源感知的课程与书籍
 
-如果你没有课程，Nanami 会在了解主题、目标和基础后推荐：
+如果你没有课程，Miku 会在了解主题、目标和基础后推荐：
 
 - 至少一个国内课程选项；
 - 至少一个国外课程选项；
@@ -106,7 +106,7 @@ flowchart LR
 
 ## 学习文件夹
 
-确认学习主题后，Nanami 会在当前工作目录创建或复用：
+确认学习主题后，Miku 会在当前工作目录创建或复用：
 
 ```text
 学习资料/<主题>/
@@ -120,7 +120,7 @@ flowchart LR
 
 ### 学习计划
 
-Nanami 会先检查 `学习计划.md`：
+Miku 会先检查 `学习计划.md`：
 
 - 已有实质内容：直接读取和沿用，不再重复询问；
 - 文件不存在、为空或只有占位符：询问你是否已有计划；
@@ -129,11 +129,11 @@ Nanami 会先检查 `学习计划.md`：
 
 ### 学习打卡
 
-使用 Nanami 学习结束后，会向 `学习打卡.md` 追加记录，不覆盖历史内容：
+使用 Miku 学习结束后，会向 `学习打卡.md` 追加记录，不覆盖历史内容：
 
 ```text
 日期：YYYY-MM-DD
-是否使用 Nanami：是
+是否使用 Miku：是
 学习主题：
 学习来源：
 本次目标：
@@ -144,20 +144,20 @@ Nanami 会先检查 `学习计划.md`：
 下一步：
 ```
 
-Nanami 无法观察你在其他地方的学习。没有打卡只表示“未知”，不代表你没有学习；你报告课外学习后，可以补记为自报记录。
+Miku 无法观察你在其他地方的学习。没有打卡只表示“未知”，不代表你没有学习；你报告课外学习后，可以补记为自报记录。
 
 ## 一个典型回合
 
 ```text
 你：我正在学习二叉树，但总是分不清遍历方式。
 
-Nanami：先不看资料。请你用自己的话说明：
+Miku：先不看资料。请你用自己的话说明：
        前序遍历、中序遍历、后序遍历分别是在什么时候访问根节点？
        每个答案后写一个 0%–100% 的信心值。
 
 你：前序是根左右，信心 80%。
 
-Nanami：前序的顺序判断正确。现在试着解释“为什么中序遍历二叉搜索树
+Miku：前序的顺序判断正确。现在试着解释“为什么中序遍历二叉搜索树
        会得到有序序列”，先不要查资料。
 ```
 
@@ -166,8 +166,8 @@ Nanami：前序的顺序判断正确。现在试着解释“为什么中序遍�
 ## 仓库结构
 
 ```text
-nanami/
-├── SKILL.md              # Nanami 的核心行为与学习规则
+miku/
+├── SKILL.md              # Miku 的核心行为与学习规则
 ├── agents/
 │   └── openai.yaml       # Codex 界面名称和默认提示
 └── README.md             # 项目说明
@@ -175,40 +175,41 @@ nanami/
 
 ## 版本
 
-当前版本：**v2.0.0**
+当前版本：**v3.0.0**
 
 | 版本 | 内容 |
 | --- | --- |
 | `v1.0.0` | 初始自学助教、认知天性学习机制、学习计划与打卡 |
 | `v1.0.1` | 隐藏工作流程播报，只保留当前必要信息 |
 | `v2.0.0` | 更名为 Nanami，加入温柔、具体鼓励和促进自主学习的人物设定 |
+| `v3.0.0` | Skill 名称改为 Miku，统一调用名和界面显示 |
 
 ## 本地安装
 
 将仓库放入 Codex 的 skills 目录：
 
 ```powershell
-git clone https://github.com/abram1a/nanami.git "$HOME\.codex\skills\nanami"
+git clone https://github.com/abram1a/nanami.git "$HOME\.codex\skills\miku"
 ```
 
 如果仓库已经存在，只需拉取最新版本：
 
 ```powershell
-cd "$HOME\.codex\skills\nanami"
+cd "$HOME\.codex\skills\miku"
 git pull
 ```
 
 也可以直接把仓库复制到：
 
 ```text
-C:\Users\abram\.codex\skills\nanami
+C:\Users\abram\.codex\skills\miku
 ```
 
 ## 设计原则
 
 > 温柔不是降低标准，而是让人愿意继续面对困难。
 
-Nanami 把鼓励放在具体行为上，把判断交给真实的提取表现，把长期进步交给间隔复习和持续练习。
+Miku 把鼓励放在具体行为上，把判断交给真实的提取表现，把长期进步交给间隔复习和持续练习。
 
 ## 许可证
 
